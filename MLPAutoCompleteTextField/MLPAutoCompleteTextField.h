@@ -16,6 +16,8 @@
 #import <UIKit/UIKit.h>
 #import "MLPAutoCompleteTextFieldDataSource.h"
 #import "MLPAutoCompleteTextFieldDelegate.h"
+#import "SAMTextField.h"
+
 
 @protocol MLPAutoCompleteSortOperationDelegate <NSObject>
 - (void)autoCompleteTermsDidSort:(NSArray *)completions;
@@ -27,7 +29,7 @@
 @end
 
 
-@interface MLPAutoCompleteTextField : UITextField <UITableViewDataSource, UITableViewDelegate, MLPAutoCompleteSortOperationDelegate, MLPAutoCompleteFetchOperationDelegate>
+@interface MLPAutoCompleteTextField : SAMTextField <UITableViewDataSource, UITableViewDelegate, MLPAutoCompleteSortOperationDelegate, MLPAutoCompleteFetchOperationDelegate>
 
 + (NSString *) accessibilityLabelForIndexPath:(NSIndexPath *)indexPath;
 
