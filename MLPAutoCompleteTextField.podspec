@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "MLPAutoCompleteTextField"
-  s.version      = "1.0"
+  s.version      = "1.6"
   s.summary      = "SAMTextField subclass with autocomplete menu."
   s.homepage     = "https://github.com/EddyBorja/MLPAutoCompleteTextField"
   s.license      = { :type => 'MIT', :file => 'MIT_LICENSE.md' }
