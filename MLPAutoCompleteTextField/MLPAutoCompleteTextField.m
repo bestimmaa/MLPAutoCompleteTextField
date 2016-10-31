@@ -843,7 +843,7 @@ withAutoCompleteString:(NSString *)string
     frame.origin.y += textField.autoCompleteTableOriginOffset.height;
     frame.size.height += textField.autoCompleteTableSizeOffset.height;
     frame.size.width += textField.autoCompleteTableSizeOffset.width;
-    frame = CGRectInset(frame, 1, 0);
+    //frame = CGRectInset(frame, 1, 0);
     
     return frame;
 }
