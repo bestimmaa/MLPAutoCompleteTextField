@@ -571,6 +571,11 @@ withAutoCompleteString:(NSString *)string
     _autoCompleteContentInsets = autoCompleteContentInsets;
 }
 
+- (void)setAutoCompleteTableCornerRadius:(CGFloat)autoCompleteTableCornerRadius{
+    self.autoCompleteTableView.layer.cornerRadius = autoCompleteTableCornerRadius;
+    _autoCompleteTableCornerRadius = autoCompleteTableCornerRadius;
+}
+
 - (void)setAutoCompleteScrollIndicatorInsets:(UIEdgeInsets)autoCompleteScrollIndicatorInsets
 {
     [self.autoCompleteTableView setScrollIndicatorInsets:autoCompleteScrollIndicatorInsets];

@@ -65,7 +65,7 @@
 @property (nonatomic, assign) CGRect autoCompleteTableFrame;
 @property (assign) CGSize autoCompleteTableOriginOffset;
 @property (assign) CGSize autoCompleteTableSizeOffset;
-@property (assign) CGFloat autoCompleteTableCornerRadius; //only applies for drop down style autocomplete tables.
+@property (nonatomic, assign) CGFloat autoCompleteTableCornerRadius; //only applies for drop down style autocomplete tables.
 @property (nonatomic, assign) UIEdgeInsets autoCompleteContentInsets;
 @property (nonatomic, assign) UIEdgeInsets autoCompleteScrollIndicatorInsets;
 @property (nonatomic, strong) UIColor *autoCompleteTableBorderColor;
