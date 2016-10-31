@@ -644,25 +644,11 @@ withAutoCompleteString:(NSString *)string
         if(![self.autoCompleteDelegate autoCompleteTextField:self
                             shouldStyleAutoCompleteTableView:self.autoCompleteTableView
                                               forBorderStyle:borderStyle]){
+    
             return;
         }
     }
     
-    switch (borderStyle) {
-        case UITextBorderStyleRoundedRect:
-            [self setRoundedRectStyleForAutoCompleteTableView];
-            break;
-        case UITextBorderStyleBezel:
-            break;
-        case UITextBorderStyleLine:
-            [self setLineStyleForAutoCompleteTableView];
-            break;
-        case UITextBorderStyleNone:
-            [self setNoneStyleForAutoCompleteTableView];
-            break;
-        default:
-            break;
-    }
 }
 
 
