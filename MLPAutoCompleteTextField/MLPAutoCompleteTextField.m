@@ -669,7 +669,7 @@ withAutoCompleteString:(NSString *)string
 
 - (void)setRoundedRectStyleForAutoCompleteTableView
 {
-    [self setAutoCompleteTableCornerRadius:8.0];
+    [self setAutoCompleteTableCornerRadius:0.0];
     [self setAutoCompleteTableOriginOffset:CGSizeMake(0, -18)];
     [self setAutoCompleteScrollIndicatorInsets:UIEdgeInsetsMake(18, 0, 0, 0)];
     [self setAutoCompleteContentInsets:UIEdgeInsetsMake(18, 0, 0, 0)];
